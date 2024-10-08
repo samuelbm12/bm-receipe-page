@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit';
+}
+:root{
+    --White: hsl(0, 0%, 100%);
+--Stone : hsl(30, 54%, 90%);
+--Stone : hsl(30, 18%, 87%);
+--Stone : hsl(30, 10%, 34%);
+--Stone : hsl(24, 5%, 18%);
+--Brown : hsl(14, 45%, 36%);
+--Rose : hsl(332, 51%, 32%);
+--Rose : hsl(330, 100%, 98%);
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url(./assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'young-serif';
+    src: url(./assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+
+img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+body{
+    background-color: hsl(30, 54%, 90%);
+ 
+}
+
+.container{
+   max-width: 600px;
+   margin-inline: auto;
+   background-color: var(--White);
+   
+   
+}
+
+.container div:not(:first-child) {
+    padding: 1.5rem;
+}
+
+h1, h2{
+    color: hsl(14, 45%, 36%);
+    font-family: 'young-serif';
+}
+
+h2{
+    padding-bottom: .7rem;
+}
+
+.prep-time h1{
+    margin-bottom: 1rem;
+    color: hsl(24, 5%, 18%);;
+}
+
+
+.para{
+    background-color: hsl(330, 100%, 98%);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    margin-top: 1.5rem;
+}
+
+.para h3{
+    margin-bottom: .7rem;
+    color: hsl(332, 51%, 32%);
+}
+
+hr{
+    margin: 1.5rem;
+    color:  hsl(30, 18%, 87%);
+
+}
+
+p, li{
+    color: hsl(24, 5%, 18%);
+    padding-bottom: .3rem;
+}
+
+ul, ol{
+    padding-left: 20px;
+}
+
+
+
+/* Nutrition */
+table {
+    width: 100%;
+    border-collapse: collapse;
+
+}
+
+td{
+  border-bottom: 2px solid hsl(30, 18%, 87%);  
+  padding: 8px 0;
+  font-size: 18px;
+  text-align: left;
+}
+
+td:nth-child(2){
+    color: hsl(14, 45%, 26%);
+    font-weight: 700;
+  justify-content: space-around;
+}
+
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    margin: 1rem 0;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+}
+
+@media (min-width: 700px) {
+    .container{
+         margin:  5rem auto 0;
+        padding: 2rem;
+        border-radius: 1rem;
+    }
+}
